@@ -8,10 +8,10 @@ Currently working on building out the node backend, which contains a small API t
 
 ## API
 
-Right now, thinks are pretty simple. There are two `GET` requests that can be made:
+Right now, things are pretty simple. There are two `GET` requests that can be made:
 
-* `/api/allon` - Turns all of the lights on to last scene
-* `/api/alloff` - Turns all of the lights off
+* `/api/allon/`: Turns all of the lights on to last scene
+* `/api/alloff/`: Turns all of the lights off
 
 ## Interface
 
