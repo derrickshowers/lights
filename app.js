@@ -1,4 +1,5 @@
 var express = require('express'),
+	hue = require('./lib/hue'),
 	app = express();
 
 // app setup
@@ -7,13 +8,13 @@ var port = process.env.PORT || 3005;
 // routes
 app.use(express.static(__dirname + '/static'));
 
-app.get('/api/allOn', function(req, res) {
-	console.log('All On');
+app.get('/api/allon', function(req, res) {
+	hue.turnOn();
 	res.send('All On');
 });
 
-app.get('/api/allOff', function(req, res) {
-	console.log('All Off');
+app.get('/api/alloff', function(req, res) {
+	hue.turnOff();
 	res.send('All Off');
 });
 
